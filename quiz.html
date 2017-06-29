@@ -2,12 +2,40 @@
 <html>
 <head>
   <title>Quiz</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link type="text/css" rel="stylesheet" href="styles.css" media="screen">
 </head>
 <body>
-  <div id="quiz"></div>
-  <button id="submit">Submit Quiz</button>
+  <div id="quiz">
+
+    <div id="question-title"></div>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="answers" id="option1"></div>
+
+      </div>
+      <div class="col-sm-6">
+        <div class="answers" id="option2"></div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="answers" id="option3"></div>
+
+      </div>
+      <div class="col-sm-6">
+        <div class="answers" id="option4"></div>
+
+      </div>
+    </div>
+    <div id="finalPopUp" class='finalPopUp hide'>There is no more questions, good job<br><br><br><button id="PlayAgain">Play Again!</button></div>
+  <button id="start" class='btn btn-success'>Start</button>
   <div id="results"></div>
-<script type="text/javascript" src="quiz.js"></script>
+</div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="quiz.js"></script>
 </body>
 </html>
