@@ -1,6 +1,5 @@
 function Game(){
-  // this.totalQuestions = 0;
-  // this.questionsPerQuiz = 15;
+
   this.questions = [
     {
       question: `What is printed in the console?<br>
@@ -156,7 +155,7 @@ function Game(){
       correctAnswer: 1
     }
   ];
-  // this.questions[2].answers[this.questions[2].correctAnswer]
+
   this.currentQuestion = '';
   this.numCorrect = 0;
   this.originalLength = this.questions.length;
@@ -179,11 +178,9 @@ Game.prototype.compareCorrectAnswer = function(answer){
   }
 };
 
-// Game.prototype.showResults = function
-
 //-------------- end of the game logic-----------------
 
-// console.log(questions[randomNumber].answers.a);
+
 
 //-------------- DOM manipulation starts -----------------
 
@@ -208,7 +205,7 @@ $('#start').on('click',function(){
 
 $('.answers').on('click',function(){
   //first we need to compare the answer and icnrease the value if its correct
-  //
+
   var userChoice = $(this).text();
   quiz.compareCorrectAnswer(userChoice);
   $('#results').empty();
@@ -244,11 +241,3 @@ function createQuestion(){
 $('#play').on('click',function(){
   window.location.reload();
 });
-
-// are there more questions?
-// if there're
-// check if totalQuestions <
-// otherwise
-// show results
-// show that iam out of questions (js) control if questions.length = 0
-// container box results

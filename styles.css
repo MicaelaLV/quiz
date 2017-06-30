@@ -1,25 +1,28 @@
 body{
   color: #555;
-  font-family: Quicksand;;
+  font-family: Quicksand;
   font-weight: 400;
   margin: 0;
   padding: 0;
   width: 100%;
 }
-
+/*
+welcome text*/
 h1,
 h2 {
-  margin: 30px 0 0 0;
+  margin: 30px 0 20px 0;
   padding: 30px 10px;
 }
 
+/*question-title*/
 h2 {
   display: none;
 }
 
+/*click the start button*/
 h3 {
   margin-bottom: 0;
-  margin-top: 60px;
+  margin-top: 80px;
 }
 
 code {
@@ -91,9 +94,10 @@ button {
 
 #start,
 #play {
-  font-size: 20px;
+/*  background-color: #3385ff;*/
+  font-size: 24px;
   margin: 30px 0;
-  padding: 10px 50px;
+  padding: 10px 30px;
 }
 
 #results {
@@ -151,8 +155,3 @@ button {
     margin-top: -75px;
     width: 300px;
   }
-
-
-/*img {
-  padding-bottom: 40px;
-}*/
